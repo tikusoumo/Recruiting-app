@@ -1,0 +1,105 @@
+.logo h1 span {
+  color: var(--base-color);
+  font-weight: 600;
+}
+.logo h1{
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+
+h6 a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #000000;
+}
+.cap h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.cap span {
+  color: var(--base-color);
+}
+body,
+html {
+  height: 100%;
+}
+.caption {
+  position: absolute;
+  top: 40%;
+  left: 8vw;
+}
+.btnh {
+  margin: auto;
+  border: none;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  position: relative;
+  border-radius: 10px;
+}
+.btnh .btn-text {
+  color: #000000;
+  mix-blend-mode: darken;
+  font-weight: 500;
+}
+.btnh:hover::before {
+  border-radius: 10px;
+  background: var(--base-color-alpha);
+  width: 100%;
+}
+
+.btnh::before {
+  transition: all 0.65s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.btnh.rounded::before {
+  border-radius: 50px;
+  width: 25%;
+  background: var(--base-color-alpha);
+  z-index: -10;
+}
+.btnh.rounded:hover::before {
+  background: var(--base-color-alpha);
+  width: 88%;
+  z-index: -10;
+}
+.menu-btn{
+  font-size: 1.5rem;
+  display: none;
+}
+.mx{
+  margin: 0 5rem;
+}
+@media (max-width: 1000px) {
+  
+  nav h6,.login{
+    display: none;
+  
+  }
+ 
+  .menu-btn{
+    
+    display: block;
+    
+  }
+}
+@media (max-width: 770px){
+  .hero-mobile{
+    flex-direction: column-reverse;
+
+  }
+  
+}
+@media (max-width: 650px){
+  .cap h1{
+    font-size: 2rem;
+  }
+} 
+
